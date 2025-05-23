@@ -1,0 +1,46 @@
+.chat-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+}
+
+.chat-select {
+  background-color: white;
+  color: #2c3e50;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+.chat-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .chat-selector {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  
+  .chat-select {
+    min-width: 120px;
+    font-size: 13px;
+  }
+  
+  .chat-label {
+    font-size: 13px;
+  }
+} 
